@@ -1,0 +1,10 @@
+div{
+    display: inline-block;
+}
+.descmanut{
+    width: 400px;
+    height: 200px;
+}
+.usuariomanut{
+    display: block;
+}
