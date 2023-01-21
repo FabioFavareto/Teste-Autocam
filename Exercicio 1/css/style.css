@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+body{
+  background-color: rgb(240,234,243);
+}
+
+/* -------------COMEÇO DO NAVBAR------------ */ 
+.btnsearch{
+  background-color: rgb(240,234,243);
+  color: rgb(145,78,173);
+  border: 0;
+  border-radius: 10px;
+}
+.inputsearch{
+  border-left: 0px;
+  background-color: rgb(240,234,243);
+  border: 0;
+  height: 40px;
+  width: 350px;
+  border-radius: 10px;
+
+}
+
+.abapesquisa{
+  margin-right: 100px;
+}
+
+.barranav{
+  margin-left: 297px; 
+}
+
+/* -------------FIM DO NAVBAR------------ */ 
+
+
+/* -------------COMEÇO OFFCANVAS------------ */ 
+:root{
+  --offcanvas-width: 270px;
+  --topnavbarheight: 56px;
+}
+
+.sidebar-nav{
+  width: var(--offcanvas-width);
+}
+
+.barracanvas{
+  background-color: #fff;
+  
+}
+
+@media (min-width: 992px){
+  .sidebar-nav{
+    transform: none;
+    visibility: visible !important;
+  } 
+}
+
+.canvastitulo{
+  color: rgb(145,78,173);
+}
+
+
+
+/* -------------FIM DO OFFCANVAS------------ */ 
+
+.tabelafim{
+margin-right: 300px;
+}
+.searchtable{
+  color: rgb(145,78,173);
+}
+.linhatab{
+  color: rgb(240,234,243);
+  background-color: rgb(145,78,173);
+  ;
+}
+
+.tabelastitulos{
+  font-weight: bold;
+}
+.datatitulos{
+  color: gray;
+  font-size: small;
+}
+.porcentagemtitulos{
+  font-size: x-small;
+  margin-left: 15px;
+}
+.lucrotitulos{
+  font-size: x-small;
+  margin-left: 150px;
+}
