@@ -1,2 +1,10 @@
 ESTE É MEU PRIMEIRO COMMIT
 Modifiquei o primeiro
+
+:wq
+END
+c
+:q
+
+
+ta malucooooooooooooo
